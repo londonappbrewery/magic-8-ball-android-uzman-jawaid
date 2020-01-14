@@ -29,10 +29,12 @@ public class MainActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 final Random generate = new Random();
                 int number = generate.nextInt(5);
+                for(int i =1;i<=10;i++){
                 Log.d("8 ball", "onClick number becomes "+number);
-                ballDisplay.setImageResource(ballArray[number]);
+                ballDisplay.setImageResource(ballArray[number]);}
             }
         });
     }
